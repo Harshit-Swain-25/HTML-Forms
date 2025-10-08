@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact / Registration Form</title>
+</head>
+<body>
+  <header>
+    <h1>Contact / Registration Form</h1>
+    <p>This demo uses only HTML. Submit to see the values in the URL (GET) — no server required.</p>
+  </header>
+
+  <main>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" required minlength="3"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" pattern="[+\d\- ]{7,}" title="Numbers, +, - and spaces allowed"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="10" max="100"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <p>Choose session:</p>
+        <input type="radio" id="morning" name="session" value="morning" checked>
+        <label for="morning">Morning</label><br>
+        <input type="radio" id="evening" name="session" value="evening">
+        <label for="evening">Evening</label><br><br>
+
+        <p>Interests (choose any):</p>
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web Dev</label><br>
+        <input type="checkbox" id="ml" name="interest" value="ml">
+        <label for="ml">Machine Learning</label><br>
+        <input type="checkbox" id="game" name="interest" value="game">
+        <label for="game">Game Dev</label><br><br>
+
+        <label for="level">Experience level:</label><br>
+        <select id="level" name="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label for="start">Preferred start date:</label><br>
+        <input type="date" id="start" name="start"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>More</legend>
+        <label for="message">Message / Notes:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write any details here..."></textarea><br><br>
+
+        <label for="range">How excited are you? (0-10)</label><br>
+        <input type="range" id="range" name="excitement" min="0" max="10"><br><br>
+
+        <label for="color">Pick a color (favorite):</label><br>
+        <input type="color" id="color" name="color" value="#0000ff"><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <section>
+      <h2>What happens on submit?</h2>
+      <p>Because <code>method="get"</code> and <code>action="#"</code> are used, submitting reloads the page and appends your form values to the URL. For example:</p>
+      <p><code>?name=Harshit&amp;email=you%40example.com&amp;session=morning&amp;level=beginner</code></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tip: Change <code>method="get"</code> to <code>method="post"</code> if you later add a backend.</p>
+  </footer>
+</body>
+</html>
