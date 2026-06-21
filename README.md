@@ -85,7 +85,7 @@ Project Folder/
 1. Download or clone this repository.
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Harshit-Swain-25/HTML-Forms.git
 ```
 
 2. Open the project folder.
